@@ -1,0 +1,25 @@
+{
+  "name": "colaborador-video-juego",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonnipaucar/colaborador-video-juego.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/jhonnipaucar/colaborador-video-juego/issues"
+  },
+  "homepage": "https://github.com/jhonnipaucar/colaborador-video-juego#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}
