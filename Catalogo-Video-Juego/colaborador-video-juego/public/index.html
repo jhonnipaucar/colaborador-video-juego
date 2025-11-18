@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameZone Store</title>
+    <link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-slate-100 min-h-screen">
+  <!-- HEADER -->
+  <header class="bg-slate-900 text-white px-6 py-4 flex items-center justify-between">
+    <div>
+      <h1 class="text-2xl font-bold tracking-tight">Jhonni's GameWorld</h1>
+      <p class="text-sm text-slate-200">Catálogo de videojuegos</p>
+    </div>
+    <span class="text-xs text-slate-300">v1.0 · demo educativa</span>
+  </header>
+
+    <!-- Contenido -->
+    <main class="p-6 max-w-6xl mx-auto">
+      <!-- Barra de busqueda -->
+      <section class="mb-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div class="flex items-center gap-2 w-full md:max-w-md">
+        <input
+          id="input-busqueda"
+          type="text"
+          placeholder="Buscar videojuego..."
+          class="w-full rounded-lg border border-cyan-400 bg-black text-cyan-200 placeholder-cyan-500 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-400"
+        />
+        <button
+          id="btn-buscar"
+          class="px-4 py-2 bg-cyan-400 text-black font-bold rounded-lg text-sm hover:bg-cyan-300 transition"
+     >
+          Buscar
+        </button>
+    </div>
+
+        <div class="flex gap-2">
+          <!-- Filtro por tienda -->
+          <select
+            id="select-tienda"
+            class="rounded-lg border border-slate-200 px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-slate-400"
+          >
+            <option value="">Todas las tiendas</option>
+            <option value="1">Steam</option>
+            <option value="7">Epic Games</option>
+            <option value="11">Humble Store</option>
+          </select>
+
+          <!-- Ordenamiento -->
+          <select
+            id="select-orden"
+            class="rounded-lg border border-slate-200 px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-slate-400"
+          >
+            <option value="">Ordenar por</option>
+            <option value="precio-asc">Precio: menor a mayor</option>
+            <option value="precio-desc">Precio: mayor a menor</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Grid de los videojuegos -->
+      <section>
+        <h2 class="text-lg font-semibold mb-4 text-white">
+          Videojuegos destacados
+        </h2>
+
+        <!-- Estado de carga -->
+        <div id="spinner" class="hidden flex items-center gap-2 text-white">
+          <div class="w-5 h-5 border-4 border-slate-400 border-t-transparent rounded-full animate-spin"></div>
+          <span>Cargando videojuegos...</span>
+        </div>
+
+        <!-- Estado de error-->
+        <p id="estado-error" class="text-red-500 mb-3 hidden">
+          ❌ Error al cargar videojuegos
+        </p>
+
+        <!-- Contenedor de tarjetas -->
+        <div
+          id="grid-videojuegos"
+          class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        ></div>
+
+        <!-- Boton de ver mas -->
+        <button
+          id="btn-ver-mas"
+          class="mt-6 mx-auto block px-4 py-2 bg-white text-black font-bold border border-slate-300 rounded-lg hover:bg-slate-100 hidden"
+        >
+          Ver más
+        </button>
+
+      </section>
+    </main>
+
+    <!-- Modal de detalle -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50"
+    >
+      <div class="bg-white w-80 p-5 rounded-lg shadow-xl relative z-50">
+        <button
+          id="modal-cerrar"
+          class="absolute top-2 right-2 text-slate-500 hover:text-black"
+        >
+          ✖
+        </button>
+
+        <img id="modal-img" class="w-full rounded-lg mb-3" />
+        <h2 id="modal-titulo" class="text-xl font-bold"></h2>
+        <p id="modal-precio-normal" class="text-sm text-slate-500"></p>
+        <p id="modal-precio-oferta" class="text-lg font-semibold text-green-600"></p>
+
+        <a
+          id="modal-link"
+          class="mt-3 block text-center bg-slate-900 text-white px-3 py-2 rounded-lg hover:bg-slate-700"
+          target="_blank"
+        >
+          Ir a la tienda
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
