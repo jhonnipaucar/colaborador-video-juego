@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <!-- Fondo negro -->
+  <rect width="1920" height="1080" fill="#000000"/>
+  
+  <!-- Elementos geométricos aleatorios -->
+  <g fill="none" stroke-width="2">
+    <!-- Triángulos invertidos magenta -->
+    <polygon points="100,50 120,20 80,20" stroke="#FF00FF" fill="none"/>
+    <polygon points="400,150 425,110 375,110" stroke="#FF00FF" fill="none"/>
+    <polygon points="800,300 830,260 770,260" stroke="#FF00FF" fill="none"/>
+    <polygon points="200,500 220,470 180,470" stroke="#FF00FF" fill="none"/>
+    
+    <!-- Triángulos normales azul -->
+    <polygon points="250,100 270,130 230,130" stroke="#0066FF" fill="none"/>
+    <polygon points="600,200 620,230 580,230" stroke="#0066FF" fill="none"/>
+    <polygon points="1200,150 1225,190 1175,190" stroke="#0066FF" fill="none"/>
+    <polygon points="1500,400 1525,440 1475,440" stroke="#0066FF" fill="none"/>
+    
+    <!-- Círculos magenta -->
+    <circle cx="150" cy="200" r="20" stroke="#FF00FF" fill="none"/>
+    <circle cx="450" cy="300" r="25" stroke="#FF00FF" fill="none"/>
+    <circle cx="900" cy="150" r="22" stroke="#FF00FF" fill="none"/>
+    <circle cx="1100" cy="600" r="30" stroke="#FF00FF" fill="none"/>
+    <circle cx="300" cy="700" r="18" stroke="#FF00FF" fill="none"/>
+    
+    <!-- Círculos azul -->
+    <circle cx="350" cy="250" r="18" stroke="#0066FF" fill="none"/>
+    <circle cx="700" cy="400" r="20" stroke="#0066FF" fill="none"/>
+    <circle cx="1300" cy="300" r="25" stroke="#0066FF" fill="none"/>
+    <circle cx="500" cy="650" r="22" stroke="#0066FF" fill="none"/>
+    <circle cx="1600" cy="550" r="28" stroke="#0066FF" fill="none"/>
+    
+    <!-- Cuadrados magenta -->
+    <rect x="80" y="80" width="30" height="30" stroke="#FF00FF" fill="none"/>
+    <rect x="500" y="50" width="35" height="35" stroke="#FF00FF" fill="none"/>
+    <rect x="1000" y="500" width="40" height="40" stroke="#FF00FF" fill="none"/>
+    <rect x="150" y="600" width="25" height="25" stroke="#FF00FF" fill="none"/>
+    
+    <!-- Cuadrados azul -->
+    <rect x="600" y="100" width="32" height="32" stroke="#0066FF" fill="none"/>
+    <rect x="1400" y="200" width="38" height="38" stroke="#0066FF" fill="none"/>
+    <rect x="800" y="700" width="28" height="28" stroke="#0066FF" fill="none"/>
+    <rect x="1700" y="300" width="35" height="35" stroke="#0066FF" fill="none"/>
+    
+    <!-- Líneas cruzadas (X) magenta -->
+    <line x1="130" y1="300" x2="170" y2="340" stroke="#FF00FF"/>
+    <line x1="170" y1="300" x2="130" y2="340" stroke="#FF00FF"/>
+    <line x1="700" y1="500" x2="740" y2="540" stroke="#FF00FF"/>
+    <line x1="740" y1="500" x2="700" y2="540" stroke="#FF00FF"/>
+    <line x1="1300" y1="600" x2="1340" y2="640" stroke="#FF00FF"/>
+    <line x1="1340" y1="600" x2="1300" y2="640" stroke="#FF00FF"/>
+    
+    <!-- Líneas cruzadas (X) azul -->
+    <line x1="350" y1="400" x2="390" y2="440" stroke="#0066FF"/>
+    <line x1="390" y1="400" x2="350" y2="440" stroke="#0066FF"/>
+    <line x1="900" y1="250" x2="940" y2="290" stroke="#0066FF"/>
+    <line x1="940" y1="250" x2="900" y2="290" stroke="#0066FF"/>
+    <line x1="1500" y1="700" x2="1540" y2="740" stroke="#0066FF"/>
+    <line x1="1540" y1="700" x2="1500" y2="740" stroke="#0066FF"/>
+    
+    <!-- Cruces (+) magenta -->
+    <line x1="200" y1="400" x2="200" y2="450" stroke="#FF00FF"/>
+    <line x1="175" y1="425" x2="225" y2="425" stroke="#FF00FF"/>
+    <line x1="950" y1="350" x2="950" y2="400" stroke="#FF00FF"/>
+    <line x1="925" y1="375" x2="975" y2="375" stroke="#FF00FF"/>
+    <line x1="1200" y1="800" x2="1200" y2="850" stroke="#FF00FF"/>
+    <line x1="1175" y1="825" x2="1225" y2="825" stroke="#FF00FF"/>
+    
+    <!-- Cruces (+) azul -->
+    <line x1="550" y1="200" x2="550" y2="250" stroke="#0066FF"/>
+    <line x1="525" y1="225" x2="575" y2="225" stroke="#0066FF"/>
+    <line x1="1100" y1="450" x2="1100" y2="500" stroke="#0066FF"/>
+    <line x1="1075" y1="475" x2="1125" y2="475" stroke="#0066FF"/>
+    <line x1="400" y1="850" x2="400" y2="900" stroke="#0066FF"/>
+    <line x1="375" y1="875" x2="425" y2="875" stroke="#0066FF"/>
+  </g>
+</svg>
