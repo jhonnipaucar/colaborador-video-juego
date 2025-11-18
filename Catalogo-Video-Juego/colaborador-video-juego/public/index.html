@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GameZone Store</title>
     <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="./2.png">
+    <style>
+      @keyframes neon-bounce {
+        0%, 100% {
+          transform: translateY(0);
+          opacity: 1;
+          box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00, 0 0 30px #00FF00;
+        }
+        50% {
+          transform: translateY(-20px);
+          opacity: 0.7;
+          box-shadow: 0 0 20px #FF00FF, 0 0 30px #FF00FF, 0 0 40px #FF00FF;
+        }
+      }
+
+      .spinner-ball {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, #00FF00, #FF00FF);
+        animation: neon-bounce 1.4s infinite ease-in-out;
+        box-shadow: 0 0 10px #00FF00, 0 0 20px #00FF00;
+      }
+    </style>
 </head>
 
 <body class="bg-slate-100 min-h-screen" style="background-image: url('./background.svg'); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;">
@@ -67,9 +91,11 @@
         </h2>
 
         <!-- Estado de carga -->
-        <div id="spinner" class="hidden flex items-center gap-2 text-white">
-          <div class="w-5 h-5 border-4 border-slate-400 border-t-transparent rounded-full animate-spin"></div>
-          <span>Cargando videojuegos....</span>
+        <div id="spinner" class="hidden flex items-center justify-center gap-4 text-white py-8">
+          <div class="spinner-ball"></div>
+          <div class="spinner-ball" style="animation-delay: 0.2s;"></div>
+          <div class="spinner-ball" style="animation-delay: 0.4s;"></div>
+          <span class="ml-4">Cargando videojuegos....</span>
         </div>
 
         <!-- Estado de error-->
